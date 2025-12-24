@@ -1,0 +1,12 @@
+@startuml
+
+actor Client
+participant Server
+database Database
+
+Client -> Server : データを要求
+Server -> Database : データ問い合わせ
+Database --> Server : 問い合わせ結果
+Server --> Client : データを返却
+
+@enduml
