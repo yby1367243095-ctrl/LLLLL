@@ -1,0 +1,21 @@
+@startuml 
+
+' アクターの定義
+actor "学生" as EC
+
+
+usecase "ログイン" as UC1
+usecase "授業登録" as UC2
+usecase "成績確認" as UC3
+usecase "掲示板をみる" as UC4
+usecase "情報更新" as UC5
+
+
+EC --> UC1
+EC --> UC2
+EC ->> UC3
+EC -> UC4
+EC --> UC5
+
+
+@enduml
